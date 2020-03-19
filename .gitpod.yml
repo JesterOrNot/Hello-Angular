@@ -2,3 +2,7 @@ image:
   file: .gitpod.Dockerfile
 tasks:
   - init: ng build
+    command: ng serve
+ports:
+  - port: 4200
+    onOpen: open-preview
